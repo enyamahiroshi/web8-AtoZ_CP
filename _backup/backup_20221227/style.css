@@ -1,0 +1,947 @@
+@charset "UTF-8";
+/**
+ * Theme Name: AtoZ
+ * Author: Web8 .inc
+ * Version: 1.0
+ * License: GNU General Public License v2 or later
+ * License URI: http://www.gnu.org/licenses/gpl-2.0.html
+ * Text Domain: az
+ *
+ * テーマカラー1：#0E4A8E
+ * テーマカラー2：#1365C1
+ * テーマカラー3：#3393FF
+ * テーマカラー4：#0ACDCE
+ * テーマカラー5：#F47930
+ * テーマカラー6：#CB3528
+ * グレー1：#ADB8C1
+ * グレー2：#E6E6E6
+ * 見出し：#1365C1
+ * 文字色：#333333
+ * リンク：#F47930
+ */
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700,900');
+
+html {
+	font-family: 'Roboto', Verdana, "メイリオ", Meiryo, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "ＭＳ Ｐゴシック", sans-serif;
+	font-size: 16px;
+	color: #111111;
+}
+a {
+	color: #F47930;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+sup {
+	font-size: 75.5%;
+	vertical-align: top;
+	position: relative;
+	top: -0.1em;
+	left: -2px;
+}
+
+.blue { color: #1365C1!important; }
+.orange { color: #F47930!important; }
+
+
+
+/* ------------------------------------------------
+// TOPページ
+// -----------------------------------------------*/
+.home section h2 {
+	text-align: center;
+	font-weight: bold;
+	color: #1365C1;
+}
+@media all and (min-width: 568px) {
+	.home section h2 {
+		font-size: 2rem;
+		padding: 50px 0;
+	}
+}
+@media all and (max-width: 567px) {
+	.home section h2 {
+		font-size: 1.5rem;
+		padding: 30px 5px;
+	}
+}
+
+
+/* ------------------------------------------------
+// 会社概要
+// -----------------------------------------------*/
+.page-id-14 h3 + .wp-block-image .alignleft,
+.page-id-14 h3 + .wp-block-image + .wp-block-image .alignleft {
+	margin-top: 0;
+	margin-bottom: 2em;
+	margin-right: 1em;
+}
+.page-id-14 h3 + .wp-block-image + .wp-block-image .alignleft {
+	margin-right: 2em;
+}
+.page-id-14 .wp-block-column h4 a {
+	color: #1365C1;
+	text-decoration: none;
+}
+.page-id-14 .wp-block-column h4 a::after {
+	content: "さらに詳しく";
+	display: inline-block;
+	font-size: 13px;
+	line-height: 1.4;
+	padding: 4px 10px;
+	color: #fff;
+	background-color: #1365C1;
+	border-radius: 20px;
+	margin-left: 10px;
+	position: relative;
+	top: -3px;
+}
+.page-id-14 .branchoffice a[href*="maps"] {
+	display: inline-block;
+	font-size: 13px;
+	line-height: 1.4;
+	padding: 4px 10px;
+	color: #fff;
+	background-color: #1365C1;
+	border-radius: 20px;
+	text-decoration: none;
+}
+img[data-attachment-id="134"] {
+	border: 1px solid #999;
+}
+@media all and (max-width: 567px) {
+	.page-id-14 .wp-block-image .alignleft {
+		float: none !important;
+		margin: 0 auto 1em !important;
+		width: 60%;
+	}
+	.page-id-14 .wp-block-image figcaption {
+		margin-top: 0;
+		margin-bottom: 0;
+		line-height: 1.3;
+		font-size: 11px;
+	}
+	.wp-block-table td:first-child {
+		width: 22vw;
+	}
+	.page-id-14 .branchoffice p {
+		text-align: left;
+	}
+}
+
+
+/* ------------------------------------------------
+// 通訳 / 翻訳
+// -----------------------------------------------*/
+.page-id-16 .storycontent h2 {
+	margin-bottom: 13px;
+}
+.page-id-16 .avail_lang {
+	color: #1365C1;
+}
+.page-id-16 .avail_lang::before {
+	content: "対応言語";
+	background-color: #1365C1;
+	color: #fff;
+	padding: 4px 10px;
+	border-radius: 5px;
+	margin-right: 12px;
+}
+.page-id-16 .summary + .wp-block-button {
+	float: right;
+}
+.page-id-16 .summary + .wp-block-button a {
+	border-radius: 6px;
+	color: #fff;
+	background-color: #F47930;
+	font-size: 14px;
+}
+
+
+/* ------------------------------------------------
+// 公教育支援（ALT）
+// -----------------------------------------------*/
+.page-id-12 .storycontent h3 {
+	font-weight: bold;
+}
+.page-id-12 .matrixwrapper::before {
+	content: "地域・設備における教科化";
+	display: block;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.page-id-12 .matrixwrapper > div {
+	position: relative;
+}
+.page-id-12 .matrixwrapper > div::before,
+.page-id-12 .matrixwrapper > div::after {
+	content: "";
+	text-align: center;
+	position: absolute;
+	top: 0;
+}
+.page-id-12 .matrixwrapper > div::before {
+	top: -2px;
+	left: 0;
+	right: 0;
+	height: 30px;
+	background: url(images/common_arrow_upward.png) no-repeat 50% 0;
+}
+.page-id-12 .matrixwrapper > div::after {
+	content: "指導者の教科化";
+	background-color: #fff;
+	top: 0;
+	bottom: 0;
+	right: -2px;
+	width: 135px;
+	background: url(images/common_arrow_rightward.png) no-repeat 0 50% #fff;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	font-weight: bold;
+}
+.page-id-12 .matrix .quad1,
+.page-id-12 .matrix .quad4 { background-color: #E0F0FF; }
+.page-id-12 .matrix .quad3 { background-color: #F2F2F2; }
+.page-id-12 .matrix .quad2 { background-color: #FFFFC4; }
+.page-id-12 .matrix .quad1 strong,
+.page-id-12 .matrix .quad1 em,
+.page-id-12 .matrix .quad4 strong,
+.page-id-12 .matrix .quad4 em {
+	color: #1365C1;
+}
+.page-id-12 .matrix .quad2 strong,
+.page-id-12 .matrix .quad2 em {
+	color: #F47930;
+}
+
+.page-id-12 .glossary .wp-block-column {
+	padding: 0;
+}
+
+.page-id-831 #titleobi h1,
+.page-id-961 #titleobi h1,
+.page-id-928 #titleobi h1,
+.page-id-976 #titleobi h1,
+.page-id-958 #titleobi h1,
+.page-id-986 #titleobi h1
+ {
+	background-color: #114c8f;
+	background-image: none;
+}
+
+.page-id-831 #titleobi .leadtxt,
+.page-id-961 #titleobi .leadtxt,
+.page-id-958 #titleobi .leadtxt,
+.page-id-928 #titleobi .leadtxt,
+.page-id-986 #titleobi .leadtxt,
+.page-id-976 #titleobi .leadtxt {
+	display: none;
+}
+
+.page-id-831 .waku_orange h4,
+.page-id-961 .waku_orange h4,
+.page-id-928 .waku_orange h4,
+.page-id-976 .waku_orange h4,
+.page-id-958 .waku_orange h4,
+.page-id-986 .waku_orange h4{
+	border-bottom:none;
+	padding:0;
+	margin: 0;
+}
+
+.page-id-831 .storycontent ul {
+	margin-left:0;
+}
+.page-id-831 .storycontent ul li {
+	list-style-type: none;
+	font-size: 0.9rem;
+}
+.page-id-831 .storycontent ul li:before {
+  display: inline;
+  content: "※ ";
+}
+
+.page-id-831 p strong:after {
+	content:"*";
+}
+
+.page-id-831 .storycontent h2 em {
+	font-size: 100%;
+}
+
+.page-id-961 ul li em {
+	font-size:80%;
+}
+
+@media all and (max-width: 567px) {
+	.page-id-12 .matrixwrapper::before,
+	.page-id-12 .matrixwrapper > div::after {
+		font-size: 0.7rem;
+	}
+	.page-id-12 .matrixwrapper > div::after {
+		width: 95px;
+	}
+	.page-id-12 .summary {
+		text-align: justify!important;
+		line-height: 1.5;
+	}
+	.page-id-12 .summary br {
+		display: none;
+	}
+}
+
+
+
+/* ------------------------------------------------
+// 法人向け研修
+// -----------------------------------------------*/
+.page-id-13 .storycontent .wp-block-columns.has-2-columns h4 {
+	background-color: #E0F0FF;
+	padding: 10px;
+	border-radius: 8px;
+	height: 56px;
+	display: flex;
+	align-items: center;
+	position: relative;
+}
+.page-id-13 .storycontent .wp-block-columns.has-2-columns h4::after {
+	content: "";
+	display: block;
+	width: 16px;
+	height: 16px;
+	background: url(images/common_beak16x16.png) no-repeat top center;
+	position: absolute;
+	bottom: -16px;
+	left: 20px;
+}
+@media all and (max-width: 849px) {
+	.page-id-13 .storycontent .wp-block-columns.has-2-columns h4 br {
+		display: none;
+	}
+}
+.page-id-13 h3.orange {
+	font-weight: bold;
+}
+.page-id-13 .solution > div {
+	background-color: #5492ce;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 8px;
+	padding: 15px;
+	line-height: 1.6;
+}
+.page-id-13 .solution > div h4 {
+	color: #FFF;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.page-id-13 .solution figure {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.page-id-13 .proposal {
+	color: #1365C1;
+	font-size: 1.1rem;
+}
+@media all and (max-width: 567px) {
+	.page-id-13 .storycontent .wp-block-columns.has-2-columns h4 {
+		font-weight: bold;
+		font-size: 1.1rem;
+		height: auto;
+	}
+	.page-id-13 .storycontent .wp-block-columns.has-2-columns h4 + p {
+		text-align: justify;
+	}
+	.page-id-13 .proposal {
+		font-style: 1.1rem;
+		font-weight: bold;
+		line-height: 1.4;
+		text-align: justify;
+	}
+	.page-id-13 .proposal br {
+		display: none;
+	}
+	.page-id-13 .solution figure img {
+		width: 50%;
+		height: auto;
+	}.page-id-13 .solution p {
+		font-weight: bold;
+	}
+}
+
+.page-id-13 .class_label {
+	padding: 5px;
+	font-size: 0.6rem;
+	color:#fff;
+	border:solid 1px #fff;
+	width: 100px;
+	margin: 10px auto;
+}
+
+.page-id-13 .class_label_premium {
+	padding: 5px;
+	font-size: 0.6rem;
+	color:#fff;
+	background-color: #ED6C00;
+	width: 100px;
+	margin: 10px auto;
+}
+
+.page-id-13 .class_label_non {
+	padding: 13px;
+}
+
+/* ------------------------------------------------
+// 法人向け研修 - 各種語学研修
+// -----------------------------------------------*/
+.page-id-482 .storycontent h2 {
+/*	margin-bottom: 13px;*/
+}
+
+.page-id-482 .avail_lang {
+	color: #1365C1;
+}
+.page-id-482 .avail_lang::before {
+	content: "対応言語";
+	background-color: #1365C1;
+	color: #fff;
+	padding: 4px 10px;
+	border-radius: 5px;
+	margin-right: 12px;
+}
+.page-id-482 .summary + .wp-block-button {
+	float: right;
+}
+.page-id-482 .summary + .wp-block-button a {
+	border-radius: 6px;
+	color: #fff;
+	background-color: #F47930;
+	font-size: 14px;
+}
+.page-id-482 .flow_midashi {
+	clear: both;
+	font-size: 1.2rem;
+	color: #1365C1;
+}
+.page-id-482 .flow {
+	float: left;
+}
+.page-id-482 h4.flow {
+	clear: both;
+	border: 1px solid #1365C1;
+	border-radius: 6px;
+	width: 265px;
+	text-align: center;
+	padding: 22px 0;
+	font-size: 1rem;
+	font-weight: bold;
+	margin-right: 35px;
+	margin-bottom: 85px;
+	position: relative;
+}
+.page-id-482 h4.flow.end {
+	margin-bottom: 0;
+}
+.page-id-482 p.flow {
+	width: 350px;
+	height: 68px;
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+.page-id-482 h4.flow::after {
+	content: "";
+	display: block;
+	width: 265px;
+	height: 85px;
+	background: url(images/translation_arrow_flow.png) no-repeat 50% 50%;
+	position: absolute;
+	bottom: -85px;
+}
+.page-id-482 h4.flow.end::after {
+	display: none;
+}
+@media all and (max-width: 767px) {
+	.page-id-482 h4.flow,
+	.page-id-482 h4.flow::after {
+		width: 23vw;
+		font-size: 1rem;
+		margin-right: 20px;
+	}
+}
+@media all and (max-width: 567px) {
+	.page-id-482 h4.flow {
+		margin-right: 3vw;
+		margin-bottom: 65px;
+	}
+	.page-id-482 h4.flow::after {
+		bottom: -65px;
+		height: 65px;
+		background-size: auto 50px;
+	}
+	.page-id-482 p.flow {
+		width: 62vw;
+		line-height: 1.4;
+		font-size: 0.9rem;
+	}
+	.page-id-482 .avail_lang {
+		font-size: 0.8rem;
+	}
+}
+
+.page-id-482 .storycontent .wp-block-columns.has-2-columns h4 {
+	background-color: #E0F0FF;
+	padding: 0px 10px;
+	border-radius: 8px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+@media all and (max-width: 849px) {
+	.page-id-482 .storycontent .wp-block-columns.has-2-columns h4 br {
+		display: none;
+	}
+}
+.page-id-482 h3.orange {
+	font-weight: bold;
+}
+.page-id-482 .solution > div {
+	background-color: #F2F2E1;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 8px;
+	padding: 15px;
+	line-height: 1.6;
+}
+.page-id-482 .solution > div h4 {
+	color: #F47930;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.page-id-482 .solution figure {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.page-id-482 .proposal {
+	color: #1365C1;
+	font-size: 1.1rem;
+}
+@media all and (max-width: 567px) {
+	.page-id-482 .storycontent .wp-block-columns.has-2-columns h4 {
+		font-weight: bold;
+		font-size: 1.1rem;
+		height: auto;
+	}
+	.page-id-482 .storycontent .wp-block-columns.has-2-columns h4 + p {
+		text-align: justify;
+	}
+	.page-id-482 .proposal {
+		font-style: 1.1rem;
+		font-weight: bold;
+		line-height: 1.4;
+		text-align: justify;
+	}
+	.page-id-482 .proposal br {
+		display: none;
+	}
+	.page-id-482 .solution figure img {
+		width: 50%;
+		height: auto;
+	}.page-id-482 .solution p {
+		font-weight: bold;
+	}
+}
+
+
+/* ------------------------------------------------
+// 法人向け研修 - GBCセミナー
+// -----------------------------------------------*/
+
+.page-id-514 .storycontent .wp-block-columns.has-2-columns h4 {
+	background-color: #E0F0FF;
+	padding: 0px 10px;
+	border-radius: 8px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+}
+@media all and (max-width: 849px) {
+	.page-id-514 .storycontent .wp-block-columns.has-2-columns h4 br {
+		display: none;
+	}
+}
+.page-id-514 h3.orange {
+	font-weight: bold;
+}
+.page-id-514 .solution > div {
+	background-color: #F2F2E1;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 8px;
+	padding: 15px;
+	line-height: 1.6;
+}
+.page-id-514 .solution > div h4 {
+	color: #F47930;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.page-id-514 .solution figure {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.page-id-514 .proposal {
+	color: #1365C1;
+	font-size: 1.1rem;
+}
+@media all and (max-width: 567px) {
+	.page-id-514 .storycontent .wp-block-columns.has-2-columns h4 {
+		font-weight: bold;
+		font-size: 1.1rem;
+		height: auto;
+	}
+	.page-id-514 .storycontent .wp-block-columns.has-2-columns h4 + p {
+		text-align: justify;
+	}
+	.page-id-514 .proposal {
+		font-style: 1.1rem;
+		font-weight: bold;
+		line-height: 1.4;
+		text-align: justify;
+	}
+	.page-id-514 .proposal br {
+		display: none;
+	}
+	.page-id-514 .solution figure img {
+		width: 50%;
+		height: auto;
+	}.page-id-514 .solution p {
+		font-weight: bold;
+	}
+}
+
+
+/* ------------------------------------------------
+// 法人向け研修 - グローバル人材育成
+// -----------------------------------------------*/
+.page-id-672 h3.feature {
+	font-weight: bold;
+}
+.page-id-672 .features > div {
+	background-color: #F2F2E1;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 8px;
+	padding: 15px;
+	line-height: 1.6;
+}
+.page-id-672 .features > div h4 {
+	color: #F47930;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.page-id-672 .features figure {
+	margin-top: 0;
+	margin-right: 0;
+}
+.page-id-672 .features p {
+	margin-bottom: 8px;
+}
+.page-id-672 .features p + p {
+	font-size: 12px;
+}
+.page-id-672 .waku_orange {
+	margin-bottom: 25px;
+}
+.page-id-672 .waku_orange .withsubtext + p {
+	font-size: 18px;
+}
+.page-id-672 .waku_orange .withsubtext + p strong {
+	font-size: 120%;
+}
+.page-id-672 .features > div figcaption {
+	display: none;
+}
+.page-id-672 .features > div figure {
+	margin: 0 auto;
+}
+@media all and (min-width: 790px) {
+	.page-id-672 .features {
+		margin: 0 80px;
+	}
+}
+
+
+/* ------------------------------------------------
+// グローバル人材紹介
+// -----------------------------------------------*/
+.page-id-15 .leadblock {
+	color: #1365C1;
+	font-size: 1.2rem;
+	line-height: 1.5;
+}
+.page-id-15 .leadblock p {
+	margin-bottom: 0;
+}
+.page-id-15 .leadblock strong {
+	font-size: 1.8rem;
+}
+.page-id-15 .nagajob {
+	margin-top: 0;
+	position: relative;
+}
+.page-id-15 .nagajob figcaption {
+	position: absolute;
+	bottom: 22px;
+	right: 43px;
+	margin: 0;
+}
+.page-id-15 h3.feature {
+	font-weight: bold;
+}
+.page-id-15 .features > div {
+	background-color: #F2F2E1;
+	margin-left: 10px;
+	margin-right: 10px;
+	border-radius: 8px;
+	padding: 15px;
+	line-height: 1.6;
+}
+.page-id-15 .features > div h4 {
+	color: #F47930;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+.page-id-15 .features figure {
+	margin-top: 0;
+	margin-right: 0;
+}
+.page-id-15 .features p {
+	margin-bottom: 8px;
+}
+.page-id-15 .features p + p {
+	font-size: 12px;
+}
+.page-id-15 .wp-block-table td:first-child {
+	width: 80px;
+}
+@media all and (max-width: 567px) {
+	.page-id-15 .leadblock p {
+		text-align: justify;
+		font-size: 1rem;
+		line-height: 1.3;
+		margin-bottom: 14px;
+	}
+	.page-id-15 .leadblock p br {
+		display: none;
+	}
+	.page-id-15 .leadblock strong {
+		font-size: 1.3rem;
+		display: block;
+		background-color: #1365C1;
+		color: #fff;
+		text-align: center;
+		padding: 10px 5px;
+	}
+	.page-id-15 .nagajob figcaption {
+		font-size: 10px;
+		bottom: 16px;
+		right: 14px;
+	}
+	.page-id-15 .features figure {
+		margin-bottom: 0;
+	}
+	.page-id-15 .features figure img {
+		width: 50%;
+		height: auto;
+	}
+}
+
+
+/* ------------------------------------------------
+// お問い合わせ
+// -----------------------------------------------*/
+.page-id-52 .storycontent .phone {
+	font-size: 40px;
+	font-weight: bold;
+}
+.page-id-52 .storycontent .phone a {
+	text-decoration: none;
+}
+.page-id-52 .storycontent .phone a::before {
+	font-family: "FontAwesome";
+	content: "\f2b3";
+	margin-right: 5px;
+}
+@media all and (max-width: 567px) {
+	.page-id-52 a[href^="mailto:"] {
+		display: block;
+		margin-bottom: 4px;
+	}
+	.page-id-52 a[href^="mailto:"] + br {
+		display: none;
+	}
+}
+
+
+/* ------------------------------------------------
+// GBCセミナー
+// -----------------------------------------------*/
+.gbcseminar,
+.langtraining {}
+.gbcseminar .wp-block-column h3,
+.langtraining .wp-block-column h3 {
+	background-color: #E0F0FF;
+	border-radius: 4px;
+	padding: 8px 8px 8px 60px;
+	position: relative;
+}
+.gbcseminar .wp-block-column h3::before,
+.langtraining .wp-block-column h3::before {
+	content: "";
+	display: block;
+	width: 84px;
+	height: 84px;
+	position: absolute;
+	top: -19px;
+	left: -30px;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+}
+.gbcseminar .block01::before { background-image: url(images/gbc_ico_01.png); }
+.gbcseminar .block02::before { background-image: url(images/gbc_ico_02.png); }
+.gbcseminar .block03::before { background-image: url(images/gbc_ico_03.png); }
+.gbcseminar .block04::before { background-image: url(images/gbc_ico_04.png); }
+.langtraining .block01::before { background-image: url(images/langtraining_ico_01.png); }
+.langtraining .block02::before { background-image: url(images/langtraining_ico_02.png); }
+.langtraining .block03::before { background-image: url(images/langtraining_ico_03.png); }
+.langtraining .block04::before { background-image: url(images/langtraining_ico_04.png); }
+
+
+
+
+/* ------------------------------------------------
+// すべてのカテゴリーで4つ以上
+// -----------------------------------------------*/
+.seed .seed1 .withsubtext.icon::before {
+	background-image: url(images/seed_ico_01.png);
+}
+.seed .seed2 .withsubtext.icon::before {
+	background-image: url(images/seed_ico_02.png);
+}
+.seed .seed3 .withsubtext.icon::before {
+	background-image: url(images/seed_ico_03.png);
+}
+.seed .seed4 .withsubtext.icon::before {
+	background-image: url(images/seed_ico_04.png);
+}
+
+
+/* ------------------------------------------------
+// ページ：サイトマップ
+// -----------------------------------------------*/
+.page-sitemap .storycontent ul {
+	margin-bottom: 0;
+}
+.page-sitemap .storycontent li {
+	margin-bottom: 0;
+}
+.page-sitemap .storycontent li a {
+	margin-bottom: 5px;
+	display: block;
+}
+
+
+/* ------------------------------------------------
+// 201222追加
+// -----------------------------------------------*/
+.link-iso21001{
+	width: 21.875%;
+	position: absolute;
+	left: 6%;
+	bottom: 110px;
+	z-index: 100;
+}
+.link-iso21001-2 {
+	width: 280px;
+	position: absolute;
+	right: 20px;
+	bottom: 80px;
+	z-index: 100;
+}
+.link-iso21001 img,
+.link-iso21001-2 img {
+	width: 100%;
+	height: auto;
+}
+.link-iso21001:hover,
+.link-iso21001-2:hover {
+	opacity: 0.7;
+}
+@media all and (max-width: 567px) {
+	.link-iso21001{
+		width: 38%;
+		left: auto;
+		right: 5px;
+		bottom: auto;
+		top: 7%;
+	}
+}
+@media all and (max-width: 767px) {
+	.link-iso21001-2 {
+		width: 38%;
+		max-width: 180px;
+		right: 5px;
+		bottom: 0;
+	}
+}
+
+.block-iso21001 figure,
+.block-iso21001 .wp-block-image {
+	margin-bottom: 0;
+}
+@media all and (max-width: 567px) {
+	.block-iso21001 > div {
+		width: auto;
+		padding: 0 !important;
+	}
+	.block-iso21001 figure {
+		margin-block-start: 0;
+    margin-block-end: 0;
+		margin-inline-start: 0;
+		margin-inline-end: 0;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.block-iso21001 img {
+		width: 100% !important;
+	}
+	.block-iso21001 p {
+		text-align: left;
+		padding: 20px 15px 0;
+	}
+}
+
+.tbl01 {
+	margin-inline-start: 0;
+	margin-inline-end: 0;
+}
+.tbl01 table {
+}
+.tbl01 table td {
+	border: none !important;
+	border-bottom: 1px solid #ddd !important;
+}
+.tbl01 table tr td:first-of-type {
+	width: 25%;
+}
+
+.tbl02 tr td:first-of-type {
+	width: 25%;
+}
